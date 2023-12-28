@@ -62,7 +62,7 @@ class Rectangle
 {
     public $length;
     public $width;
-    public function Perimeter()
+    public function getPerimeter()
     {
         return ($this->length + $this->width) * 2;
     }
