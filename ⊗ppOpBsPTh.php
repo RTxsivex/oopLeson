@@ -33,3 +33,21 @@ $employee2->salary = 2000;
 echo $employee1->getSalary() + $employee2->getSalary();
 echo $employee1->checkAge();
 echo $employee2->checkAge();
+
+#2
+class User
+{
+    public $name;
+    public $age;
+    public function setAge($age)
+    {
+        return $age >= 18 ? $this->age = $age : $this->age;
+    }
+
+}
+
+$user = new User();
+$user->name = 'John';
+$user->age = 25;
+
+echo $user->setAge(12);
