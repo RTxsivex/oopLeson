@@ -24,7 +24,18 @@ class User
 }
 
 
-$user = new User;
-$user->age = 25;
+class Student
+{
+   public $name;
+   public $course;
+   public function transferToNextCourse()
+   {
+       $this->course++;
+   }
 
-echo $user->subAge(7);
+}
+
+$stud = new Student();
+$stud->name ='test';
+$stud->course=1;
+echo $stud->transferToNextCourse();
