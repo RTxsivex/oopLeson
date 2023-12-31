@@ -24,18 +24,29 @@ class User
 }
 
 
-class Student
-{
-   public $name;
-   public $course;
-   public function transferToNextCourse()
-   {
-       $this->course++;
-   }
+class Student {
+    public $name;
+    public $course;
 
+    public function transferToNextCourse() {
+
+        return $this->isCourseCorrect($this->course) ? $this->course++ : $this->course;
+
+    }
+
+    private function isCourseCorrect()
+    {
+        return $this->course <5 ? true : false;
+    }
 }
-
 $stud = new Student();
 $stud->name ='test';
-$stud->course=1;
-echo $stud->transferToNextCourse();
+$stud->course =1;
+$i = 0;
+while ($i<=10) {
+    echo $stud->transferToNextCourse()."\n";
+    $i++;
+}
+
+
+
