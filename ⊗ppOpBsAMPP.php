@@ -39,14 +39,5 @@ class Student {
         return $this->course <5 ? true : false;
     }
 }
-$stud = new Student();
-$stud->name ='test';
-$stud->course =1;
-$i = 0;
-while ($i<=10) {
-    echo $stud->transferToNextCourse()."\n";
-    $i++;
-}
-
 
 
