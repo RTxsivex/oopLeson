@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 class City {
     public $name;
     public $foundation;
@@ -17,8 +17,8 @@ $us = new City('Moscow', '2024-01-01', 1000000);
 $pop = 'name';
 
 echo $us->$pop;
-=======
- class City {
+
+ class City2 {
      public $name;
      public $foundation;
      public $population;
@@ -31,7 +31,7 @@ echo $us->$pop;
      }
  }
 
- $msv = new City('Mow','12-10-1915', 200000);
+ $msv = new City2('Mow','12-10-1915', 200000);
  $props = ['name', 'foundation', 'population'];
 
  foreach ($props as $prop) {
@@ -55,8 +55,8 @@ class User
 
 $props = ['surname', 'name', 'patronymic'];
 
-$user = new User('Иванов', 'Иван', 'Иванович');
+$user = new User('пїЅпїЅпїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅ', 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ');
 
 $props = ['surname', 'name', 'patronymic'];
 echo $user->{$props[0]}." ".$user->{$props[1]}." ".$user->{$props[2]};
->>>>>>> 7c98d84a3ba4ac23bb9b879a54dde583ae410b4a
+
