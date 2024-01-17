@@ -26,21 +26,19 @@ class User
 
 $test = new User('test',25);
 
-echo $test->getName()."\n";
+echo $test->getName()."\n
+qqqq                ";
 
 
 class Student extends User
 {
     public function __construct($name, $age)
     {
-        if(strlen($name)<10)
-        {
-            parent::__construct($name, $age);
-        }
+        return strlen($name) < 10 ?  parent::__construct($name, $age) : 'error';
 
     }
 }
 
-$styd = new Student('tes', 25);
+$styd = new Student('testiorpe', 25);
 
 echo $styd->getName();
